@@ -1,69 +1,101 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background: #222;
-    background-image: url('https://source.unsplash.com/1600x900/?nature,landscape');
-    font-family: 'Open Sans', sans-serif;
-      /* Full height */
-  height: 100%; 
+*{
+    font-family: "Rimouski";
+}
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover
+body{
+    background-color: #293251;
+}
+
+.container{
+    width: 300px;    
+    background-color: #FFF;
+   
+    display: block;
+    margin: 0 auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin-top: 300px;
     
+
+    
+    border-radius: 10px;
+    padding-bottom : 50px;
 }
 
-.card {
-    background: #1f1818;
-    color:white;
-    padding: 2em;
-    border-radius: 30px;
-    width: 100%;
-    max-width: 420px;
-    margin: 1em;
+.app-title{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
 }
 
-html {
-
-    height:100%;
+.app-title p{
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    color: #293251;
 }
 
-.search {
-    display:flex;
-    align-items:center;
-    justify-content:center;
+.notification{
+    background-color: #f8d7da;
+    display: none;
 }
 
-button {
-    margin: 0.5em;
-    border-radius: 50%;
-    border: none;
-    height: 46px;
-    width: 46px;
-    outline:none;
-    background:#1dd5ff;
-    color:white;
-    cursor:pointer;
-    transition:0.2 ease-in-out;
+.notification p{
+    color: #721c24;
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
 }
-input.search-bar {
-    border: none;
-    outline: none;
-    padding: 0.5em 1em;
-    border-radius: 18px;
-    background: #8071712b;
-    color: #1dd5ff;
-    font-family: inherit;
-    font-size: 120%;
-    width: calc(100% - 100px);
+
+.weather-container{
+    width: 300px;
+    height: 260px;
+    background-color: #F4F9FF;
 }
-button:hover{
-    background:#8071712b;
+
+.weather-icon{
+    width: 300px;
+    height: 128px;
 }
-h1.temp {
-    margin:0;
+
+.weather-icon img{
+    display: block;
+    margin: 0 auto;
+}
+
+.temperature-value{
+    width: 300px;
+    height:60px;
+}
+
+.temperature-value p{
+    padding: 0;
+    margin: 0;
+    color: #293251;
+    font-size: 4em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.temperature-value span{
+    color: #293251;
+    font-size: 0.5em;
+}
+
+.temperature-description p{
+    padding: 8px;
+    margin: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.location p{
+    margin: 0;
+    padding: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 0.8em;
 }
